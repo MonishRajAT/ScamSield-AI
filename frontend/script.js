@@ -3,7 +3,7 @@
 /* =========================================================
    Config — change the backend URL in this one place
    ========================================================= */
-const API_BASE_URL = 'http://127.0.0.1:8000';
+const API_BASE_URL = 'https://scamsield-ai.onrender.com';
 const ANALYZE_ENDPOINT = `${API_BASE_URL}/api/analyze`;
 const MAX_MESSAGE_LENGTH = 5000;
 
