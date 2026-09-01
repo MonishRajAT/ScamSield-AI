@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ScamShield AI — Know before you respond</title>
+<meta name="description" content="Paste a suspicious message and ScamShield AI will analyze its risk, explain why it was flagged, and tell you what to do next." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient background glow layers -->
+  <div class="bg-field" aria-hidden="true">
+    <div class="bg-glow bg-glow--cyan"></div>
+    <div class="bg-glow bg-glow--violet"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell shell--wide site-header__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.5L4 5.5V11c0 5.25 3.36 9.86 8 11 4.64-1.14 8-5.75 8-11V5.5L12 2.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M8.7 12.1l2.2 2.2 4.4-4.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">ScamShield <span class="brand__accent">AI</span></span>
+      </div>
+      <div class="status-pill" role="status">
+        <span class="status-pill__dot" aria-hidden="true"></span>
+        AI protection active
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero-section shell shell--wide">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero__title">Is this message safe?</h1>
+          <p class="hero__subtitle">ScamShield AI reads a suspicious text, email, or DM and tells you the risk level, why it looks that way, and exactly what to do next — in seconds.</p>
+          <div class="hero-ctas">
+            <button type="button" id="hero-cta" class="btn-primary btn-primary--hero">
+              <span class="btn-primary__label">Analyze a message</span>
+              <span class="btn-primary__spinner" aria-hidden="true"></span>
+            </button>
+            <a href="#how-it-works" class="hero-link" id="how-it-works-link">See how it works</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 320 320" width="320" height="320">
+            <defs>
+              <linearGradient id="sweepGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#4fd1e0" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#4fd1e0" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <circle cx="160" cy="160" r="138" class="radar-ring radar-ring--1"/>
+            <circle cx="160" cy="160" r="98" class="radar-ring radar-ring--2"/>
+            <circle cx="160" cy="160" r="58" class="radar-ring radar-ring--3"/>
+            <g class="radar-sweep">
+              <path d="M160 160 L160 22 A138 138 0 0 1 257 63 Z" fill="url(#sweepGradient)"/>
+            </g>
+            <g class="shield-icon" transform="translate(128,118)">
+              <path d="M32 4L6 15v24c0 25 16 44 32 50 16-6 32-25 32-50V15L32 4Z" stroke="#4fd1e0" stroke-width="2.4" fill="rgba(79,209,224,0.08)"/>
+              <path d="M19 39l9 9 18-20" stroke="#4fd1e0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works shell shell--wide" id="how-it-works" aria-labelledby="how-it-works-heading">
+      <div class="section-head">
+        <h2 id="how-it-works-heading">How it works</h2>
+        <p>Four steps, seconds each.</p>
+      </div>
+      <ol class="steps-row">
+        <li class="step">
+          <span class="step__number">1</span>
+          <h3 class="step__title">Paste the message</h3>
+          <p class="step__text">Drop in the suspicious SMS, email, or chat message you received.</p>
+        </li>
+        <li class="step">
+          <span class="step__number">2</span>
+          <h3 class="step__title">ScamShield analyzes it</h3>
+          <p class="step__text">A trained classifier and an AI model examine the language and intent together.</p>
+        </li>
+        <li class="step">
+          <span class="step__number">3</span>
+          <h3 class="step__title">Get a clear risk level</h3>
+          <p class="step__text">See whether it's safe, suspicious, or high-risk, with a confidence score.</p>
+        </li>
+        <li class="step">
+          <span class="step__number">4</span>
+          <h3 class="step__title">Know what to do</h3>
+          <p class="step__text">Get a plain-English explanation and safe next steps for that message.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- What you get -->
+    <section class="benefits shell shell--wide" aria-labelledby="benefits-heading">
+      <div class="section-head">
+        <h2 id="benefits-heading">What you get</h2>
+      </div>
+      <div class="benefits-row">
+        <div class="benefit">
+          <span class="benefit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg>
+          </span>
+          <h3>A straight answer</h3>
+          <p>Not just a spam label. A clear safe, suspicious, or high-risk verdict with a confidence score.</p>
+        </div>
+        <div class="benefit">
+          <span class="benefit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 5.5h16v10H9l-4 3.5v-3.5H4v-10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Reasoning you can follow</h3>
+          <p>See exactly which signals triggered the flag, explained in plain language.</p>
+        </div>
+        <div class="benefit">
+          <span class="benefit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 3v3.2M12 17.8V21M3 12h3.2M17.8 12H21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="5.2" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3>Guidance, not guesswork</h3>
+          <p>Get specific next steps for that message — never a suggestion to click its links or call its numbers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analyzer tool -->
+    <section class="analyzer shell" id="analyzer" aria-labelledby="analyzer-heading">
+      <div class="panel analyzer__panel">
+        <h2 id="analyzer-heading" class="visually-hidden">Message analyzer</h2>
+
+        <form id="analyzer-form" novalidate>
+          <label for="message-input" class="field-label">Paste your message</label>
+          <textarea
+            id="message-input"
+            name="message"
+            class="message-input"
+            placeholder="Paste a suspicious SMS, email, or message here…"
+            maxlength="5000"
+            aria-describedby="char-counter validation-message"
+            required
+          ></textarea>
+
+          <div class="analyzer__meta">
+            <p id="validation-message" class="validation-message" role="alert" aria-live="assertive"></p>
+            <span id="char-counter" class="char-counter">0 / 5000</span>
+          </div>
+
+          <div class="examples" aria-label="Example messages">
+            <span class="examples__label">Try an example:</span>
+            <div class="examples__chips">
+              <button type="button" class="chip chip--safe" data-example="safe">
+                <span class="chip__dot" aria-hidden="true"></span>Safe
+              </button>
+              <button type="button" class="chip chip--suspicious" data-example="suspicious">
+                <span class="chip__dot" aria-hidden="true"></span>Suspicious
+              </button>
+              <button type="button" class="chip chip--high-risk" data-example="high-risk">
+                <span class="chip__dot" aria-hidden="true"></span>High-risk
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" id="analyze-btn" class="btn-primary">
+            <span class="btn-primary__label">Analyze message</span>
+            <span class="btn-primary__spinner" aria-hidden="true"></span>
+          </button>
+
+          <p id="status-message" class="status-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="error-section" class="error-banner shell" hidden role="alert">
+      <div class="panel error-banner__panel">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M12 7.5v5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="12" cy="16.5" r="0.9" fill="currentColor"/>
+        </svg>
+        <p id="error-text"></p>
+      </div>
+    </section>
+
+    <section id="results" class="results shell" hidden aria-labelledby="results-heading">
+      <h2 id="results-heading" class="visually-hidden">Security verdict</h2>
+
+      <!-- Risk verdict -->
+      <div id="risk-panel" class="panel risk-panel">
+        <div class="risk-panel__top">
+          <span id="risk-icon" class="risk-icon" aria-hidden="true"></span>
+          <div>
+            <p class="risk-panel__label">Risk level</p>
+            <p id="risk-level-text" class="risk-panel__level"></p>
+          </div>
+        </div>
+        <div class="risk-panel__confidence">
+          <span id="confidence-value" class="confidence-value"></span>
+          <span class="confidence-label">confidence</span>
+        </div>
+      </div>
+
+      <!-- Probability breakdown -->
+      <div class="panel prob-panel">
+        <h3 class="panel-heading">Probability breakdown</h3>
+        <ul id="probability-list" class="probability-list"></ul>
+      </div>
+
+      <!-- AI explanation -->
+      <div class="panel explanation-panel">
+        <h3 class="panel-heading">Why was this flagged?</h3>
+        <p id="explanation-summary" class="explanation-summary"></p>
+
+        <h4 class="subheading">Signals detected</h4>
+        <ul id="signals-list" class="signals-list"></ul>
+
+        <div class="scam-type">
+          <span class="scam-type__label">Likely scam type</span>
+          <span id="scam-type-badge" class="scam-type__badge"></span>
+        </div>
+      </div>
+
+      <!-- Recommended actions -->
+      <div id="actions-panel" class="panel actions-panel">
+        <h3 class="panel-heading">What should I do?</h3>
+        <ol id="actions-list" class="actions-list"></ol>
+      </div>
+
+      <!-- Original message -->
+      <details class="panel message-details">
+        <summary>View analyzed message</summary>
+        <p id="original-message" class="original-message"></p>
+      </details>
+
+      <div class="results__footer">
+        <button type="button" id="reset-btn" class="btn-secondary">Analyze another message</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer shell">
+    <p>ScamShield AI analyzes message content only. It does not access your accounts or contacts.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
