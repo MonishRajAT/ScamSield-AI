@@ -1,0 +1,22 @@
+[project]
+name = "scamshield-ai"
+version = "1.0.0"
+description = "AI-powered scam message detection and explanation system."
+requires-python = ">=3.12"
+
+dependencies = [
+    # Backend
+    "fastapi>=0.116,<1.0",
+    "uvicorn[standard]>=0.35,<1.0",
+    "pydantic>=2.11,<3.0",
+    "python-dotenv>=1.1,<2.0",
+
+    # ML runtime - compatible with the Colab model
+    "numpy>=2.0,<3.0",
+    "scipy>=1.13,<2.0",
+    "pandas>=2.2,<3.0",
+    "scikit-learn==1.6.1",
+    "joblib>=1.4,<2.0",
+    "threadpoolctl>=3.5,<4.0",
+    "groq>=0.31,<1.0",
+]
